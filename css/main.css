@@ -18,9 +18,24 @@ html {
   box-sizing: inherit;
 }
 
-h2 {
+.card-body h2 {
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.card-body p {
+  margin-top: 0;
+}
+
+.card-text {
+  font-size: .7rem;
+  margin-top: 0;
+}
+
+.card-img img {
+  display: block;
+  width: 100%;
 }
 
 .card-img {
@@ -28,10 +43,17 @@ h2 {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 1em;
 }
 
-ul {
+.cards {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-body {
+  padding-top: .2rem;
 }
 
 @media only screen and (min-width: 25em) {
@@ -46,9 +68,67 @@ ul {
     flex-wrap: wrap;
   }
 
-  h1,
-  p {
+  h2,
+  .card-body p {
     margin: 0 0 1.3rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .card-body h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  .card-body p {
+    margin: 0 0 1.4rem;
+  }
+
+  li {
+    width: 33.33%;
+  }
+
+  .card-text {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  .card-body p {
+    margin: 0 0 1.5rem;
+  }
+
+  li {
+    width: 33.33%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
   }
 
 }
